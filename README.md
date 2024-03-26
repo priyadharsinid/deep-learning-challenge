@@ -46,22 +46,24 @@ The purpose of this analysis is to develop a binary classifier using deep learni
 
   * The Model achieves  an accuracy of 72.76%.I was not able to achieve target model performance(>75%)
 
-  output:
-   215/215 - 1s - loss: 0.5650 - accuracy: 0.7277 - 1s/epoch - 5ms/step
-   Loss: 0.564972996711731, Accuracy: 0.7276967763900757
+        output:
+       215/215 - 1s - loss: 0.5650 - accuracy: 0.7277 - 1s/epoch - 5ms/step
+       Loss: 0.564972996711731, Accuracy: 0.7276967763900757
 
   * Optimization 1:
 
-    Added an additional hidden layer, resulting in three hidden layers with 15 neurons, while maintaining the number of neurons (80, 30) and epochs (100).The Model achieves  an accuracy of 72.63%
+    Added an additional hidden layer, resulting in three hidden layers with 15 neurons, while maintaining the number of neurons (80, 30) and epochs (100).The Model achieves  an accuracy 
+    of 72.63%
 
   * Optimization 2:
 
-    Increased the number of neurons from 80 to 128 in the first hidden layer , from 30 to 64 in the second hidden layer and from 15 to 32 in the third hidden layer while keeping the epochs(100).The Model achieves  an accuracy of 72.81%
+    Increased the number of neurons from 80 to 128 in the first hidden layer , from 30 to 64 in the second hidden layer and from 15 to 32 in the third hidden layer while keeping the 
+    epochs(100).The Model achieves  an accuracy of 72.81%
     
 
   * Optimization 3:
 
-    Set the batch_size to 64  while keeping the number of layers(3) and neurons(128,64,32,1).The Model achieves  an accuracy of 72.62%
+    Set the batch_size to 64  while keeping the number of hidden layers(3) and neurons(128,64,32).The Model achieves  an accuracy of 72.62%
 
 ### Summary:
 
