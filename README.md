@@ -28,13 +28,14 @@ The purpose of this analysis is to develop a binary classifier using deep learni
     
     Layer (type)                Output Shape              Param #   
     =================================================================
-    dense (Dense)               (None, 80)                3520      
+    dense (Dense)                (None, 80)                 3520      
                                                                     
-    dense_1 (Dense)             (None, 30)                2430      
+    dense_1 (Dense)              (None, 30)                 2430      
                                                                     
-    dense_2 (Dense)             (None, 1)                 31        
-                                                                    
+    dense_2 (Dense)              (None, 1)                  31        
+                                                                 
     =================================================================
+
     Total params: 5981 (23.36 KB)
     Trainable params: 5981 (23.36 KB)
     Non-trainable params: 0 (0.00 Byte)
