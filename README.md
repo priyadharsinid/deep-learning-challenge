@@ -6,26 +6,26 @@ The purpose of this analysis is to develop a binary classifier using deep learni
 
 ### Results: 
 
-** Data Preprocessing:
+* Data Preprocessing:
 
-   *Target variable:IS_SUCCESSFUL
+     * Target variable:IS_SUCCESSFUL
+  
+     * Features variables: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE,ORGANIZATION, INCOME_AMT, SPECIAL_CONSIDERATIONS
+  
+     * Removed variables:EIN,NAME
 
-   *Features variables: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE,ORGANIZATION, INCOME_AMT, SPECIAL_CONSIDERATIONS
+ * Compiling, Training, and Evaluating the Model
+ 
 
-   *Removed variables:EIN,NAME
+     The neural network model consists of three dense  layers:
+  
+    * First hidden layer:80 neurons, with a ReLU activation function.
+  
+    * Second hidden layer: 30 neurons with a ReLU activation function.
+  
+    * Output layer: 1 neuron with a sigmoid activation .
 
-** Compiling, Training, and Evaluating the Model
-
-
-   The neural network model consists of three dense  layers:
-
-  * First hidden layer:80 neurons, with a ReLU activation function.
-
-  * Second hidden layer: 30 neurons with a ReLU activation function.
-
-  * Output layer: 1 neuron with a sigmoid activation .
-
-    _________________________________________________________________
+    
     Layer (type)                Output Shape              Param #   
     =================================================================
     dense (Dense)               (None, 80)                3520      
